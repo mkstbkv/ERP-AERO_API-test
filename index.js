@@ -5,6 +5,7 @@ const signin = require('./routes/signinRouter');
 const signup = require('./routes/signupRouter');
 const logout = require('./routes/logoutRouter');
 const info = require('./routes/infoRouter');
+const file = require('./routes/fileRouter');
 const app = express();
 const port = 6000;
 
@@ -15,6 +16,7 @@ app.use('/signin', signin);
 app.use('/signup', signup);
 app.use('/logout', logout);
 app.use('/info', info);
+app.use('/file', file);
 
 const run = async () => {
     await db.init();
