@@ -7,7 +7,7 @@ const logout = require('./routes/logoutRouter');
 const info = require('./routes/infoRouter');
 const file = require('./routes/fileRouter');
 const app = express();
-const port = 6000;
+const port = 8000;
 
 app.use(cors({origin: '*'}));
 app.use(express.json());
